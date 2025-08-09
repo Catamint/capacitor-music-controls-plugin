@@ -88,6 +88,8 @@ public class CapacitorMusicControls extends Plugin {
 				metadataBuilder.putString(MediaMetadataCompat.METADATA_KEY_ARTIST, infos.artist);
 				//album
 				metadataBuilder.putString(MediaMetadataCompat.METADATA_KEY_ALBUM, infos.album);
+				//duration
+				metadataBuilder.putLong(MediaMetadataCompat.METADATA_KEY_DURATION, -1L);
 
 				Bitmap art = getBitmapCover(infos.cover);
 				if(art != null){
